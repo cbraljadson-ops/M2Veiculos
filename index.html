@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoUsados Premium · Veículos com procedência</title>
+    <title>M2 Veiculos · Comércio de usados</title>
     <!-- Bootstrap 5 + ícones -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -146,7 +146,6 @@
                 font-size: 0.9rem;
             }
         }
-        /* efeito nas imagens placeholder */
         .img-placeholder {
             background: #e2e8f0;
             display: flex;
@@ -154,6 +153,22 @@
             justify-content: center;
             color: #5c6f7e;
             font-weight: 500;
+        }
+        .footer-cnpj-block {
+            background: #0f2f40;
+            border-radius: 12px;
+            padding: 1rem 1.2rem;
+        }
+        .footer-cnpj-block .row {
+            --bs-gutter-y: 0.4rem;
+        }
+        .badge-inapta {
+            background-color: #a94442;
+            color: white;
+            font-weight: 600;
+            padding: 0.25rem 0.9rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
         }
     </style>
 </head>
@@ -163,7 +178,7 @@
     <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2">
         <div class="container">
             <a class="navbar-brand fs-3" href="#">
-                <i class="bi bi-car-front-fill me-2"></i>Auto<span class="text-gold" style="color: var(--primary-gold);">Usados</span>
+                <i class="bi bi-car-front-fill me-2"></i>M2<span class="text-gold" style="color: var(--primary-gold);">Veiculos</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" 
                     aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
@@ -194,7 +209,7 @@
                         Carros, camionetas e utilitários <span>usados</span> com qualidade
                     </h1>
                     <p class="lead text-secondary mt-3">
-                        Mais de 10 anos de confiança. Revisados, com procedência e garantia.
+                        Mais de 5 anos de mercado. Revisados, com procedência e garantia.
                         Encontre o veículo ideal para você.
                     </p>
                     <div class="d-flex flex-wrap gap-3 mt-4">
@@ -205,14 +220,14 @@
                             <i class="bi bi-whatsapp me-2"></i>Fale conosco
                         </a>
                     </div>
-                    <div class="mt-4 d-flex gap-4 text-secondary">
+                    <div class="mt-4 d-flex flex-wrap gap-4 text-secondary">
                         <span><i class="bi bi-check-circle-fill text-success me-1"></i> Revisão técnica</span>
                         <span><i class="bi bi-shield-check text-primary me-1"></i> Documentação OK</span>
-                        <span><i class="bi bi-star-fill text-warning me-1"></i> 4.9/5 avaliações</span>
+                        <span><i class="bi bi-star-fill text-warning me-1"></i> 4.8/5 avaliações</span>
                     </div>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block">
-                    <img src="https://placehold.co/600x400/0d2a3a/d4a743?text=AutoUsados+Premium" 
+                    <img src="https://placehold.co/600x400/0d2a3a/d4a743?text=M2+Veiculos" 
                          alt="Destaque veículos" class="img-fluid rounded-4 shadow-lg">
                 </div>
             </div>
@@ -344,9 +359,9 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-md-6">
-                    <h2 class="section-title mb-4">Sobre a AutoUsados</h2>
+                    <h2 class="section-title mb-4">Sobre a M2 Veiculos</h2>
                     <p><strong>Comércio a varejo de automóveis, camionetas e utilitários usados</strong> com procedência e transparência.</p>
-                    <p>Há mais de uma década no mercado, selecionamos cada veículo com rigor técnico, garantindo documentação regular e histórico de manutenção. Trabalhamos para que você compre com confiança.</p>
+                    <p>Atuamos no mercado desde 2020, selecionando cada veículo com rigor técnico, garantindo documentação regular e histórico de manutenção. Trabalhamos para que você compre com confiança.</p>
                     <ul class="list-unstyled">
                         <li><i class="bi bi-check-circle-fill text-gold me-2" style="color: var(--primary-gold);"></i> Revisão mecânica em 120 itens</li>
                         <li><i class="bi bi-check-circle-fill text-gold me-2" style="color: var(--primary-gold);"></i> Veículos com garantia de 3 meses</li>
@@ -357,36 +372,87 @@
                 <div class="col-md-6">
                     <div class="bg-light p-4 rounded-4 shadow-sm">
                         <h5 class="fw-bold"><i class="bi bi-geo-alt-fill me-2" style="color: var(--primary-gold);"></i> Venha nos visitar</h5>
-                        <p class="text-secondary">Av. Principal, 1234 · Centro · São Paulo/SP</p>
+                        <p class="text-secondary">Brasília · Distrito Federal</p>
                         <p><i class="bi bi-clock me-2"></i> Seg–Sex 9h–19h · Sáb 9h–14h</p>
                         <hr>
-                        <p><i class="bi bi-telephone-fill me-2"></i> (11) 3456-7890</p>
-                        <p><i class="bi bi-envelope-fill me-2"></i> contato@autousados.com.br</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i> (61) 99964-3018</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i> guedesveiculos@gmail.com</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- RODAPÉ COMPLETO COM CNPJ E POLÍTICA DE PRIVACIDADE -->
+    <!-- RODAPÉ COMPLETO COM TODAS AS INFORMAÇÕES DO CNPJ 39906454000161 (F&I VEICULOS LTDA) -->
     <footer class="info-footer pt-5 pb-3">
         <div class="container">
             <div class="row g-4">
-                <div class="col-md-5">
-                    <h5 class="fw-bold text-white"><i class="bi bi-car-front-fill me-2" style="color: var(--primary-gold);"></i>AutoUsados Premium</h5>
-                    <p class="text-light-emphasis" style="opacity: 0.8;">Comércio varejista de automóveis, camionetas e utilitários usados. Excelência em veículos seminovos.</p>
-                    <!-- TODAS AS INFORMAÇÕES DO CNPJ 39906454000161 -->
-                    <ul class="list-unstyled small">
-                        <li><span class="text-gold" style="color: var(--primary-gold);">CNPJ:</span> 39.906.454/0001-61</li>
-                        <li><span class="text-gold" style="color: var(--primary-gold);">Razão social:</span> AUTO USADOS PREMIUM LTDA</li>
-                        <li><span class="text-gold" style="color: var(--primary-gold);">Nome fantasia:</span> AutoUsados Premium</li>
-                        <li><span class="text-gold" style="color: var(--primary-gold);">Inscrição estadual:</span> 123.456.789.110</li>
-                        <li><span class="text-gold" style="color: var(--primary-gold);">Endereço:</span> Av. Principal, 1234 - Centro - São Paulo/SP - CEP 01000-000</li>
-                        <li><span class="text-gold" style="color: var(--primary-gold);">Telefone:</span> (11) 3456-7890</li>
-                        <li><span class="text-gold" style="color: var(--primary-gold);">E-mail:</span> contato@autousados.com.br</li>
-                    </ul>
+                <div class="col-lg-5">
+                    <h5 class="fw-bold text-white"><i class="bi bi-car-front-fill me-2" style="color: var(--primary-gold);"></i>M2 Veiculos</h5>
+                    <p class="text-light-emphasis" style="opacity: 0.8;">Comércio varejista de automóveis, camionetas e utilitários usados.</p>
+
+                    <!-- BLOCO DE INFORMAÇÕES COM CNPJ E DADOS COMPLETOS -->
+                    <div class="footer-cnpj-block mt-3">
+                        <div class="row g-1 small">
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">CNPJ:</div>
+                            <div class="col-6 col-md-7 text-light">39.906.454/0001-61</div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">Razão Social:</div>
+                            <div class="col-6 col-md-7 text-light">F&I Veiculos LTDA</div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">Nome Fantasia:</div>
+                            <div class="col-6 col-md-7 text-light">M2 Veiculos</div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">Abertura:</div>
+                            <div class="col-6 col-md-7 text-light">25/11/2020 (5 anos, 7 meses, 29 dias)</div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">Porte:</div>
+                            <div class="col-6 col-md-7 text-light">Micro Empresa</div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">Natureza Jurídica:</div>
+                            <div class="col-6 col-md-7 text-light">Sociedade Empresária Limitada</div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">MEI / Simples:</div>
+                            <div class="col-6 col-md-7 text-light">Não / Não</div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">Opção/Exclusão Simples:</div>
+                            <div class="col-6 col-md-7 text-light">25/11/2020 - 31/12/2023</div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">Capital Social:</div>
+                            <div class="col-6 col-md-7 text-light">R$ 104.500,00</div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">Tipo:</div>
+                            <div class="col-6 col-md-7 text-light">Matriz</div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">Situação:</div>
+                            <div class="col-6 col-md-7 text-light"><span class="badge-inapta">Inapta</span></div>
+
+                            <div class="col-6 col-md-5 text-gold" style="color: var(--primary-gold);">Data Situação:</div>
+                            <div class="col-6 col-md-7 text-light">05/06/2026</div>
+
+                            <div class="col-12 mt-1 text-gold" style="color: var(--primary-gold);">Motivo:</div>
+                            <div class="col-12 text-light" style="font-size: 0.8rem;">Omissão de Declarações</div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-4">
+                    <h6 class="fw-bold text-white">Contato & Localização</h6>
+                    <ul class="list-unstyled small">
+                        <li><span class="text-gold" style="color: var(--primary-gold);">E-mail:</span> guedesveiculos@gmail.com</li>
+                        <li><span class="text-gold" style="color: var(--primary-gold);">Telefone:</span> (61) 99964-3018</li>
+                        <li><span class="text-gold" style="color: var(--primary-gold);">WhatsApp:</span> (61) 99964-3018</li>
+                        <li class="mt-2"><span class="text-gold" style="color: var(--primary-gold);">Município:</span> Brasília</li>
+                        <li><span class="text-gold" style="color: var(--primary-gold);">Estado:</span> Distrito Federal</li>
+                    </ul>
+                    <div class="mt-2">
+                        <a href="#" class="text-light me-2" style="font-size: 1.3rem;"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light me-2" style="font-size: 1.3rem;"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light me-2" style="font-size: 1.3rem;"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
                     <h6 class="fw-bold text-white">Links rápidos</h6>
                     <ul class="list-unstyled small">
                         <li><a href="#" class="text-light-emphasis" style="text-decoration: none; opacity: 0.8;">Todos os veículos</a></li>
@@ -395,27 +461,15 @@
                         <li><a href="#" class="text-light-emphasis" style="text-decoration: none; opacity: 0.8;">Blog e dicas</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h6 class="fw-bold text-white">Atendimento</h6>
-                    <p class="small text-light-emphasis" style="opacity: 0.8;">
-                        <i class="bi bi-whatsapp me-1"></i> (11) 99999-9999<br>
-                        <i class="bi bi-envelope me-1"></i> sac@autousados.com.br
-                    </p>
-                    <div class="mt-2">
-                        <a href="#" class="text-light me-2" style="font-size: 1.3rem;"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-light me-2" style="font-size: 1.3rem;"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-light me-2" style="font-size: 1.3rem;"><i class="bi bi-youtube"></i></a>
-                    </div>
-                </div>
             </div>
 
-            <!-- POLÍTICA DE PRIVACIDADE EM DESTAQUE -->
+            <!-- POLÍTICA DE PRIVACIDADE -->
             <div class="politica-card mt-4">
                 <div class="row align-items-center">
                     <div class="col-md-8">
                         <h6 class="mb-1"><i class="bi bi-shield-lock-fill me-2"></i>Política de Privacidade</h6>
                         <p class="mb-0 small">
-                            A AutoUsados Premium respeita sua privacidade. Seus dados pessoais são utilizados exclusivamente 
+                            A M2 Veiculos (F&I Veiculos LTDA) respeita sua privacidade. Seus dados pessoais são utilizados exclusivamente 
                             para atendimento, cotação e envio de informações sobre veículos. Não compartilhamos com terceiros. 
                             Você pode solicitar exclusão ou correção a qualquer momento. Ao navegar, você concorda com nossa 
                             política de cookies e termos de uso.
@@ -430,13 +484,13 @@
             </div>
 
             <div class="border-top border-secondary border-opacity-25 mt-4 pt-3 text-center text-light-emphasis small" style="opacity: 0.7;">
-                &copy; 2026 AutoUsados Premium · CNPJ 39.906.454/0001-61 · Todos os direitos reservados.
+                &copy; 2026 M2 Veiculos · F&I Veiculos LTDA · CNPJ 39.906.454/0001-61 · Todos os direitos reservados.
             </div>
         </div>
     </footer>
 
     <!-- WHATSAPP FLUTUANTE -->
-    <a href="#" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/5561999643018" class="whatsapp-float" target="_blank">
         <i class="bi bi-whatsapp fs-4"></i> Fale pelo WhatsApp
     </a>
 
